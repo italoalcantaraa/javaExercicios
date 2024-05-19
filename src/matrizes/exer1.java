@@ -1,4 +1,4 @@
-package src;
+package src.matrizes;
 
 import java.util.Scanner;
 

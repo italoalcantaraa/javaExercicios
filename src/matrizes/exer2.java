@@ -1,4 +1,4 @@
-package src;
+package src.matrizes;
 
 import java.util.Scanner;
 
@@ -16,7 +16,7 @@ public class exer2 {
 
     public static int[] lerValores(Scanner ler) {
         
-        System.out.println("Informe o numer de colunas: ");
+        System.out.println("Informe o número de colunas: ");
         int lin = ler.nextInt();
         
         System.out.println("Informe o número de colunas: ");
@@ -32,21 +32,22 @@ public class exer2 {
         
         int mat[][] = new int[valores[0]][valores[1]];
 
-        System.out.println("Preenche matriz ->");
+        System.out.println("Preencha a matriz ->\n");
 
         for(int i = 0; i < valores[0]; i ++){
             for(int j = 0; j < valores[1]; j ++){
-                System.out.println("Matriz[" + i +"[" + j + "] = ");
+                System.out.print("Matriz[" + i +"[" + j + "] = ");
                 mat[i][j] = ler.nextInt();
             }
         }
 
         return mat;
-        
+
     }
 
     public static void imprimirVetor(int[][] mat, int[] valores) {
-        
+     
+        System.out.println("\nMatriz preenchida:\n");    
         for(int i = 0; i < valores[0]; i ++){
             for(int j = 0 ; j < valores[1]; j ++){
                 System.out.print(mat[i][j] + " ");
