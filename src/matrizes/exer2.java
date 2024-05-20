@@ -10,6 +10,7 @@ public class exer2 {
         int[] valores = lerValores(ler);
         int[][] mat =  matriz(valores, ler);
         imprimirVetor(mat, valores);
+        matrizPrincipal(mat,valores);
         
         
     }
@@ -53,6 +54,18 @@ public class exer2 {
                 System.out.print(mat[i][j] + " ");
             }
             System.out.println();
+        }
+    }
+
+    public static void matrizPrincipal(int mat[][], int valores[]){
+        System.out.println("Matriz principal: ");            
+        
+        for(int i = 0; i < valores[0]; i ++){
+            for(int j = 0; j < valores[1]; j ++){
+                if(i == j){
+                    System.out.print(mat[i][j] + " - ");
+                }
+            }
         }
     }
 }
