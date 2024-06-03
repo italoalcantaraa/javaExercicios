@@ -2,17 +2,17 @@ package src.métodos_introdução.test;
 
 import java.util.Scanner;
 
-import src.métodos_introdução.domínio.calculator;
+import src.métodos_introdução.domínio.Calculator;
 
 public class testCalculator {
     public static void main(String[] args) {
 
         Scanner ler = new Scanner(System.in);
 
-        calculator calcMult = new calculator();
+        Calculator calcMult = new Calculator();
         calcMult.calculatorMult();
 
-        calculator calcSum = new calculator();
+        Calculator calcSum = new Calculator();
         calcSum.calculatorSum();
 
         System.out.println("------------");
@@ -24,6 +24,6 @@ public class testCalculator {
             numbers[i] = ler.nextInt();
         }
 
-        calculator.calculatorAverage(numbers[0], numbers[1], numbers[2]);
+        Calculator.calculatorAverage(numbers[0], numbers[1], numbers[2]);
     }
 }

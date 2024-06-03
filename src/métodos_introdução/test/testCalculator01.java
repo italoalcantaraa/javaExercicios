@@ -2,7 +2,7 @@ package src.métodos_introdução.test;
 
 import java.util.Scanner;
 
-import src.métodos_introdução.domínio.calculator;
+import src.métodos_introdução.domínio.Calculator;
 
 public class testCalculator01 {
     public static void main(String[] args) {
@@ -16,10 +16,10 @@ public class testCalculator01 {
             avarage[i] = ler.nextInt();
         }
 
-        calculator resultAvarage = new calculator();
+        Calculator resultAvarage = new Calculator();
         double media = resultAvarage.avarage(avarage[0], avarage[1], avarage[2]);
 
-        calculator print = new calculator();
+        Calculator print = new Calculator();
         print.imprimirMedia(media); 
     }
 }

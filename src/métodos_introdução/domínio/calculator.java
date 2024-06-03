@@ -1,6 +1,6 @@
 package src.métodos_introdução.domínio;
 
-public class calculator {
+public class Calculator {
     public void calculatorMult(){
         System.out.println(5*5);
     }
@@ -26,4 +26,26 @@ public class calculator {
             System.out.println("Reprovado!");
         }
     }
+
+    public void somaArray(int[] numbers){
+
+        int sum = 0;
+
+        for(int num : numbers){
+            sum += num;
+    }
+    
+    System.out.println(sum);
+}
+
+public void varArgs(int... numbers){
+    int sum = 0;
+
+    for(int num : numbers){
+        sum += num;
+    }
+    System.out.println("--------------");    
+    System.out.println(sum);
+
+}
 }
