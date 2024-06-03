@@ -9,6 +9,10 @@ public class Funcionario {
         System.out.println("--------------");
         System.out.println("Nome: " + this.nome);
         System.out.println("Idade: " + this.idade);
+
+        if(salario == null){
+            return;
+        }
         System.out.println("Salário: ");
         for (double i : salario) {
             System.out.println(i);
@@ -17,6 +21,9 @@ public class Funcionario {
     }
 
     public void mediaSalarial() {
+        if(salario == null){
+            return;
+        }
         int sum = 0;
 
         for (double num : salario) {
